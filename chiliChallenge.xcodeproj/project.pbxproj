@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		582FFD4E239ABE4400F3AEDB /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582FFD4D239ABE4400F3AEDB /* ViewController2.swift */; };
 		AE4A835E237DC3C000B74A23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4A835D237DC3C000B74A23 /* AppDelegate.swift */; };
 		AE4A8360237DC3C000B74A23 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4A835F237DC3C000B74A23 /* SceneDelegate.swift */; };
 		AE4A8362237DC3C000B74A23 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4A8361237DC3C000B74A23 /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 /* Begin PBXFileReference section */
 		1E9A21C864593B757A07688F /* Pods-chiliChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chiliChallenge.debug.xcconfig"; path = "Target Support Files/Pods-chiliChallenge/Pods-chiliChallenge.debug.xcconfig"; sourceTree = "<group>"; };
 		420C04A192F31A90956243AA /* Pods-chiliChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chiliChallenge.release.xcconfig"; path = "Target Support Files/Pods-chiliChallenge/Pods-chiliChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		582FFD4D239ABE4400F3AEDB /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 		9788671DBF6EA7C6429F1103 /* Pods_chiliChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_chiliChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE4A835A237DC3C000B74A23 /* chiliChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chiliChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE4A835D237DC3C000B74A23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -48,7 +50,6 @@
 				1E9A21C864593B757A07688F /* Pods-chiliChallenge.debug.xcconfig */,
 				420C04A192F31A90956243AA /* Pods-chiliChallenge.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -85,6 +86,7 @@
 				AE4A835F237DC3C000B74A23 /* SceneDelegate.swift */,
 				AE4A8361237DC3C000B74A23 /* ViewController.swift */,
 				AE4A8363237DC3C000B74A23 /* Main.storyboard */,
+				582FFD4D239ABE4400F3AEDB /* ViewController2.swift */,
 				AE4A8366237DC3C100B74A23 /* Assets.xcassets */,
 				AE4A8368237DC3C100B74A23 /* LaunchScreen.storyboard */,
 				AE4A836B237DC3C100B74A23 /* Info.plist */,
@@ -208,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE4A8362237DC3C000B74A23 /* ViewController.swift in Sources */,
+				582FFD4E239ABE4400F3AEDB /* ViewController2.swift in Sources */,
 				AE4A835E237DC3C000B74A23 /* AppDelegate.swift in Sources */,
 				AE4A8360237DC3C000B74A23 /* SceneDelegate.swift in Sources */,
 			);

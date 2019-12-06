@@ -9,9 +9,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     var item = ""
     var appetizers = ["Chips and Dip", "Nachos", "Calamari", "Queso Dip"]
     var entrees = ["Chicken","Steak","Seafood", "Pasta", "Pizza", "Burgers" ]
-    var sides = ["Fries","Salad" ]
-    var drinks = [ "Water", "Pop", "Alcohol"]
-    
+    var sides = ["Fries","Salad", "Chips","Fruit" ]
+    var drinks = ["Water", "Pop", "Alcohol","Lemonade"]
+    var desserts = ["Cake", "Ice Cream", "Brownie", "Pie", "Shake"]
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var chillis: UIImageView!
    
@@ -33,19 +33,23 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat{
-        return 35
+        return 70
     }
-      
+//    
+//    func tableView(_ tableView: UITableView, estimatedHeightForHeaderInSection section: Int) -> CGFloat {
+//        return 30
+//    }
+//      
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView?{
         let label = UILabel()
         label.backgroundColor = .lightGray
         label.text = sectionTitles[section]
-        label.font = UIFont(name: "Sabo", size: 40)
+        label.font = UIFont(name: "Sabo", size: 100)
         return label
     }
       
     func numberOfSections(in tableView: UITableView) -> Int{
-        return 4
+        return 6
     }
       
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
@@ -54,7 +58,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell")
-        cell?.textLabel?.font = UIFont(name: "Futura", size: 20)
+        cell?.textLabel?.font = UIFont(name: "Futura", size: 30)
 
         if indexPath.section == 0 {
             item = appetizers[indexPath.row]
@@ -71,6 +75,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
         else if  indexPath.section == 3 {
             item = drinks[indexPath.row]
+            cell?.textLabel?.text = item
+        }
+        else if  indexPath.section == 4 {
+            item = sides[indexPath.row]
+            cell?.textLabel?.text = item
+        }
+        else if  indexPath.section == 5 {
+            item = desserts[indexPath.row]
             cell?.textLabel?.text = item
         }
         else {
