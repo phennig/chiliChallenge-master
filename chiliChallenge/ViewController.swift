@@ -40,7 +40,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let label = UILabel()
         label.backgroundColor = .lightGray
         label.text = sectionTitles[section]
-        label.font = UIFont(name: "Cambria", size: 30)
+        label.font = UIFont(name: "Sabo", size: 40)
         return label
     }
       
@@ -54,11 +54,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell")
-        
+        cell?.textLabel?.font = UIFont(name: "Futura", size: 20)
+
         if indexPath.section == 0 {
             item = appetizers[indexPath.row]
             cell?.textLabel?.text = item
-            cell?.textLabel?.font = UIFont(name: "Cambria", size: 25)
             return cell!
         }
         else if  indexPath.section == 1 {
