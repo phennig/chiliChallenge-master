@@ -35,11 +35,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat{
         return 70
     }
-//    
+    
 //    func tableView(_ tableView: UITableView, estimatedHeightForHeaderInSection section: Int) -> CGFloat {
 //        return 30
 //    }
-//      
+      
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView?{
         let label = UILabel()
         label.backgroundColor = .lightGray
