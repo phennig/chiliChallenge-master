@@ -20,7 +20,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         chillis.image = UIImage(named: "ch")
         tableView.delegate = self
         tableView.dataSource = self
-      
     }
 
     @IBAction func button(_ sender: UIButton){
@@ -53,7 +52,15 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
       
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
-        return 2
+        if section == 0{
+            return appetizers.count
+        }
+        else if section == 1{
+            return entrees.count
+        }
+        else{
+            return 10
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{

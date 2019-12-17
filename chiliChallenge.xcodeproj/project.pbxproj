@@ -8,14 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		582FFD4E239ABE4400F3AEDB /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582FFD4D239ABE4400F3AEDB /* ViewController2.swift */; };
+		58B26EF723A95F1700912270 /* Pods_chiliChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9788671DBF6EA7C6429F1103 /* Pods_chiliChallenge.framework */; };
+		58B26EF823A95F1700912270 /* Pods_chiliChallenge.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9788671DBF6EA7C6429F1103 /* Pods_chiliChallenge.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AE4A835E237DC3C000B74A23 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4A835D237DC3C000B74A23 /* AppDelegate.swift */; };
 		AE4A8360237DC3C000B74A23 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4A835F237DC3C000B74A23 /* SceneDelegate.swift */; };
 		AE4A8362237DC3C000B74A23 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4A8361237DC3C000B74A23 /* ViewController.swift */; };
 		AE4A8365237DC3C000B74A23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE4A8363237DC3C000B74A23 /* Main.storyboard */; };
 		AE4A8367237DC3C100B74A23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE4A8366237DC3C100B74A23 /* Assets.xcassets */; };
 		AE4A836A237DC3C100B74A23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE4A8368237DC3C100B74A23 /* LaunchScreen.storyboard */; };
-		B1178AF8BF316E31DCE086CA /* Pods_chiliChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9788671DBF6EA7C6429F1103 /* Pods_chiliChallenge.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		58B26EF923A95F1700912270 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				58B26EF823A95F1700912270 /* Pods_chiliChallenge.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1E9A21C864593B757A07688F /* Pods-chiliChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chiliChallenge.debug.xcconfig"; path = "Target Support Files/Pods-chiliChallenge/Pods-chiliChallenge.debug.xcconfig"; sourceTree = "<group>"; };
@@ -37,7 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B1178AF8BF316E31DCE086CA /* Pods_chiliChallenge.framework in Frameworks */,
+				58B26EF723A95F1700912270 /* Pods_chiliChallenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +121,7 @@
 				AE4A8357237DC3C000B74A23 /* Frameworks */,
 				AE4A8358237DC3C000B74A23 /* Resources */,
 				CB3E1EA0FA9B854EC260605D /* [CP] Embed Pods Frameworks */,
+				58B26EF923A95F1700912270 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
